@@ -16,7 +16,7 @@ export default function LoginScreen(props) {
         <View style={styles.screen}>
             <Image syle={styles.logo} source={logo} />
             <TextInput style={styles.inputs} onChangeText={txt => setUsuario(txt) } placeholder="Email" />
-            <TextInput style={styles.inputs} onChangeText={txt => setSenha(txt) }  placeholder="Senha" />
+            <TextInput style={styles.inputs} onChangeText={txt => setSenha(txt) }  placeholder="Senha"  secureTextEntry={true} />
 
             <ColorButton text="Entrar" style={styles.btn_entrar} onPress={() => dispatch(setLogin('meu-jwt-de-mentira'))} />
             <ColorButton text="Cadastrar" style={styles.btn_cadastrar} onPress={() => props.navigation.navigate('Cadastro')} />
