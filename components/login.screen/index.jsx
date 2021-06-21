@@ -3,9 +3,9 @@ import {View, Text, TextInput, Button, Image} from "react-native";
 import styles from './styles';
 import {setLogin} from '../../slices/session.slice'
 import {useDispatch} from "react-redux";
-import logo from './img/logo.png'
 import GlythButton from "./glyth.button";
 import ColorButton from "./color.button";
+import ClientLogoComponent from "../client-logo.component";
 
 export default function LoginScreen(props) {
     const dispatch = useDispatch();
@@ -14,7 +14,7 @@ export default function LoginScreen(props) {
 
     return (
         <View style={styles.screen}>
-            <Image syle={styles.logo} source={logo} />
+            <ClientLogoComponent />
             <TextInput style={styles.inputs} onChangeText={txt => setUsuario(txt) } placeholder="Email" />
             <TextInput style={styles.inputs} onChangeText={txt => setSenha(txt) }  placeholder="Senha"  secureTextEntry={true} />
 
