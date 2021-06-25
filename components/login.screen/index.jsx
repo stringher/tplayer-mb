@@ -6,6 +6,7 @@ import {useDispatch} from "react-redux";
 import ColorButton from "./color.button";
 import ClientLogoComponent from "../client-logo.component";
 import config from "../../config/config.json"
+import Toast from "react-native-toast-message";
 
 export default function LoginScreen(props) {
     const dispatch = useDispatch();
@@ -22,8 +23,18 @@ export default function LoginScreen(props) {
             body: JSON.stringify({
                 usuario, senha
             })
-        }).then(response =>response.json())
-            .then((ans) => dispatch(setLogin(ans.jwt)))
+        }).then(response => {
+            if (response.status == 200) {
+                return response.json();
+            } else {
+                Toast.show({text1: 'Usuario ou senha inválidos'})
+                return {};
+            }
+        })
+        .then((ans) => {
+            if (ans.jwt) dispatch(setLogin(ans.jwt))
+            })
+        .catch((err) => console.log('Erro: ' + err))
 
     }
 

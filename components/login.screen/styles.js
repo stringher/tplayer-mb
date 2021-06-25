@@ -36,7 +36,8 @@ export default StyleSheet.create({
         alignSelf: 'stretch',
         height: 40,
         borderBottomWidth: 1,
-        borderColor: 'lightgray'
+        borderColor: 'lightgray',
+        color: 'lightgray'
     },
     logo: { },
     btn_entrar: {
