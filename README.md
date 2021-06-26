@@ -54,3 +54,9 @@ Depois de rodando, uma janela será aberta no navegador, onde será apresentado
 um QRCode (o mesmo será mostrado no console). Com o app do Expo no seu celular, 
 capture esse QR, e a aplicação será aberta no seu celular. Note que quaisquer 
 alterações serão refletidar logo após a gravação e compilação do arquivo. 
+
+
+Configuração de servidores:
+---------------------------
+
+A localização do servidor de backend deverá ser feita em /config/config.json
