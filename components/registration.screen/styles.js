@@ -7,7 +7,8 @@ const dim = Dimensions.get('screen');
 export default StyleSheet.create({
     screen: {
         flex: 1,
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: '#444'
     },
     inputs: {
         alignSelf: 'stretch',
@@ -15,19 +16,46 @@ export default StyleSheet.create({
         borderBottomWidth: 1,
         borderColor: 'lightgray',
         backgroundColor: 'transparent',
+        color: 'lightgray',
         marginHorizontal: marginH,
         marginVertical: marginV,
         fontSize: 20
     },
     btn: {
         width: dim.width - 80,
-        color: 'white',
         alignSelf: 'stretch',
         textAlign: 'center',
         paddingVertical: 10,
-        backgroundColor: '#1DA1F2',
-        fontWeight: 'bold',
+        borderRadius: 10,
         fontSize: 15,
+        backgroundColor: '#da0',
         marginTop: 10
+    },
+    btn_interno: {
+        color: 'white',
+        textAlign: 'center',
+        borderColor: 'white',
+        borderWidth: 1,
+        marginHorizontal: 5,
+        paddingVertical: 3,
+        fontWeight: 'bold',
+        borderRadius: 4
+    },
+    dropdown: {
+        backgroundColor: "transparent",
+        alignSelf: 'center',
+        borderWidth: 0,
+        borderBottomWidth: 1,
+        borderColor: 'white',
+        color: 'lightgray'
+    },
+    dropdown_container: {
+    },
+    dropdown_label: {
+        color: 'lightgray'
+    },
+    dropdown_text: {
+        fontSize: 20,
+        color: 'lightgray'
     }
 });
