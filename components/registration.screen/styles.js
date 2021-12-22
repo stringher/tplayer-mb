@@ -8,7 +8,7 @@ export default StyleSheet.create({
     screen: {
         flex: 1,
         alignItems: 'center',
-        backgroundColor: '#444'
+        backgroundColor: '#132440'
     },
     inputs: {
         alignSelf: 'stretch',

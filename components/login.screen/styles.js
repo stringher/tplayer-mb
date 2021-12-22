@@ -30,7 +30,7 @@ export default StyleSheet.create({
         flexDirection: 'column',
         marginTop: 3,
         paddingHorizontal: 40,
-        backgroundColor: '#444'
+        backgroundColor: '#132440'
     },
     inputs: {
         alignSelf: 'stretch',

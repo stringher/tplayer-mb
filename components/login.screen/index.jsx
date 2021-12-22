@@ -47,7 +47,7 @@ export default function LoginScreen(props) {
                        placeholderTextColor="lightgray" secureTextEntry={true}/>
 
             <ColorButton text="Entrar" style={styles.btn_entrar} internalStyle={styles.btn_entrar_interno}
-                         onPress={doLogin}/>
+                         onPress={() => props.navigation.navigate('Home')}/>
             <ColorButton text="Cadastrar" style={styles.btn_cadastrar} internalStyle={styles.btn_cadastrar_interno}
                          onPress={() => props.navigation.navigate('Cadastro')}/>
         </View>
